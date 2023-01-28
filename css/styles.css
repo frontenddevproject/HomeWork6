@@ -2,11 +2,13 @@ html{
    --light-gray:#E7EBF4;
    --gray:#68717A;
    --white: #fff;
+   --bg-color:#F8F9FB;
+   --cart-border-color:#DFDFDF;
 }
 body{
    margin:0;
    padding:0;
-   background-color: #F8F9FB;
+   background-color: var(--bg-color);
 }
 .flex{
    display: flex;
@@ -74,7 +76,7 @@ form{
    justify-content: center;
    align-items: center;
    background-color: var(--gray);
-   color:#fff;
+   color: var(--white);
    font-weight: 700;
    font-size: 20px;
    width:30px;
@@ -83,7 +85,7 @@ form{
 }
 .cart-content{
    flex-direction: column;
-   border:1px solid #DFDFDF;
+   border:1px solid var(--cart-border-color);
    border-radius: 5px;
    background-color: var(--white);
 }
@@ -95,13 +97,13 @@ form{
    font-size: 0.75em;
 }
 .promo{
-   background-color: #F8F9FB;
+   background-color: var(--bg-color);
 }
 .promo .green-text{
-   color:#3BAF8C;
+   color:#28a745;
 }
 .promocode{
-   border:1px solid #DFDFDF;
+   border:1px solid var(--cart-border-color);
    align-items: center;
    background-color: var(--white);
    padding: 8px;
@@ -123,11 +125,13 @@ form{
    margin: 0;
    padding: 0;
    list-style-type: none;
+   justify-content: center;
+   gap:15px;
 }
 .footer-list-link{
    text-decoration: none;
 }
 .footer-list-link:hover{
    text-decoration: underline;
-   color: blue;
+   color: #0000ff;
 }
